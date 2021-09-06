@@ -163,7 +163,7 @@
 #define TEMP_0_PIN                         P0_24
 #define TEMP_1_PIN                         P0_23
 #define TEMP_BED_PIN                       P0_25
-#define TEMP_BOARD_PIN                     P1_30  // Onboard thermistor, NTC100K
+#define TEMP_CHAMBER_PIN                   P1_30  // Onboard thermistor, NTC100K
 
 //
 // Heaters / Fans
@@ -175,7 +175,7 @@
 #define FAN1_PIN                           P2_02
 
 #ifndef CONTROLLER_FAN_PIN
-  #define CONTROLLER_FAN_PIN            FAN1_PIN
+  #define CONTROLLER_FAN_PIN            HEATER_1_PIN
 #endif
 
 /**
